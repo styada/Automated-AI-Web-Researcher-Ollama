@@ -1,3 +1,9 @@
+__pycache__
+venv
+logs
+modelfile
+research_session_*
+
 # Python
 __pycache__/
 *.py[cod]
