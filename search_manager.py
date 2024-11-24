@@ -130,6 +130,14 @@ class SearchManager:
                 'score': float(r.get('relevance_score', 0.0)),
                 'published_date': r.get('published_date')
             } for r in results.get('results', [])]
+        elif provider == 'arxiv':
+            normalized['results'] = [{
+                'title': r.get('title', ''),
+                'url': r.get('link', ''),
+                'content': r.get('summary', '')[:500],
+                'score': float(r.get('score', 0.0)),
+                'published_date': r.get('published_date')
+            } for r in results.get('results', [])]
         elif provider == 'duckduckgo':
             if not isinstance(results, list):
                 results = []

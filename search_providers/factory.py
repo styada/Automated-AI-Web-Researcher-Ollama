@@ -6,6 +6,7 @@ from search_providers.bing_provider import BingSearchProvider
 from search_providers.brave_provider import BraveSearchProvider
 from search_providers.exa_provider import ExaSearchProvider
 from search_providers.tavily_provider import TavilySearchProvider
+from search_providers.arxiv_provider import ArXivSearchProvider
 from system_config import get_search_config
 
 class SearchProviderFactory:
@@ -18,6 +19,7 @@ class SearchProviderFactory:
         "brave": BraveSearchProvider,
         "exa": ExaSearchProvider,
         "tavily": TavilySearchProvider,
+        "arxiv": ArXivSearchProvider
     }
 
     @classmethod

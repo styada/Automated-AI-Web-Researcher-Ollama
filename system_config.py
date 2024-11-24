@@ -26,6 +26,7 @@ SEARCH_CONFIG = {
         "bing",
         "brave",
         "tavily",
+        "arxiv",
         "duckduckgo"             # Keep DuckDuckGo as final fallback
     ],
     "provider_settings": {
@@ -45,6 +46,10 @@ SEARCH_CONFIG = {
         "exa": {
             "max_results": 10,
             "use_highlights": True
+        },
+        "arxiv": {
+            "search_query": "all",
+            "max_results": 10
         },
         "duckduckgo": {
             "max_results": 10,

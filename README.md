@@ -60,6 +60,11 @@ The system supports multiple search providers with automatic fallback:
    - High-precision results
    - Content highlighting
 
+5. arXiv
+   - Academic papers from arXiv  
+   - Links and summarizations provided by arXiv
+   - No API key required
+
 5. DuckDuckGo (Fallback)
    - Privacy-focused results
    - No API key required
@@ -95,7 +100,7 @@ BRAVE_API_KEY=your_brave_key
 BING_API_KEY=your_bing_key
 EXA_API_KEY=your_exa_key
 ```
-Note: The system will work with any combination of configured providers. If a provider's API key is not set, it will be skipped in the fallback chain. You don't need them all. If you don't add any, DuckDuckGo will be used.
+Note: The system will work with any combination of configured providers. If a provider's API key is not set, it will be skipped in the fallback chain. You don't need them all. If you don't add any, arXiv and DuckDuckGo will be used.
 
 5. Install and Configure Ollama:
 - Install Ollama following instructions at https://ollama.ai
